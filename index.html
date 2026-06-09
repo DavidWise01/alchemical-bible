@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="THE ALCHEMICAL BIBLE — Dante's Commedia read as the Magnum Opus. Inferno=Nigredo, Purgatorio=Albedo, Paradiso=Rubedo. A hermetic codex, tinfoil sealed.">
+<title>THE ALCHEMICAL BIBLE · Dante as the Great Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=EB+Garamond:ital@0;1&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0907;--ink2:#15110c;--ink3:#1e1810;--pa:#ece3d2;--pa2:#bcae93;--dim:#897a5e;--line:#2a2114;
+  --gold:#c9a227;--gilt:#e3c15a;--nig:#2b2b30;--alb:#cdd3da;--rub:#c0392b;
+  --serif:"Cinzel",Georgia,serif;--read:"EB Garamond",Georgia,serif;--mono:"Space Mono",monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--pa);font-family:var(--read);line-height:1.7;font-size:18px;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse at 50% -8%,rgba(201,162,39,.10),transparent 55%),radial-gradient(ellipse at 50% 112%,rgba(192,57,43,.06),transparent 50%)}
+.wrap{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:0 22px 90px}
+header{padding:64px 0 30px;text-align:center;border-bottom:1px solid var(--line);position:relative}
+header::after{content:"";position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:160px;height:1px;background:linear-gradient(90deg,var(--nig),var(--alb),var(--rub));box-shadow:0 0 12px rgba(201,162,39,.3)}
+.seal{font-size:30px;color:var(--gilt);letter-spacing:.3em;margin-bottom:16px}
+.eye{font-family:var(--mono);font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+.eye a{color:var(--dim);text-decoration:none}.eye a:hover{color:var(--gilt)}
+h1{font-family:var(--serif);font-size:clamp(30px,7vw,58px);font-weight:800;letter-spacing:.08em;line-height:1.05;
+  background:linear-gradient(100deg,var(--gold),var(--gilt) 50%,var(--rub));-webkit-background-clip:text;background-clip:text;color:transparent}
+.h-sub{font-family:var(--serif);font-size:clamp(13px,3vw,17px);letter-spacing:.2em;color:var(--pa2);margin-top:12px;text-transform:uppercase}
+.lede{font-size:19px;color:var(--pa2);max-width:60ch;margin:22px auto 0;font-style:italic;line-height:1.75}
+.drop::first-letter{font-family:var(--serif);font-size:3.2em;float:left;line-height:.82;padding:6px 10px 0 0;color:var(--gilt)}
+.sec{margin-top:54px}
+.sec h2{font-family:var(--serif);font-size:21px;font-weight:600;letter-spacing:.07em;color:var(--pa);padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.ss{font-size:14px;color:var(--dim);font-style:italic;margin-bottom:20px}
+.books{display:grid;gap:14px}
+.book{display:block;background:var(--ink2);border:1px solid var(--line);border-radius:13px;padding:20px 22px;text-decoration:none;color:inherit;position:relative;overflow:hidden;transition:transform .18s,border-color .18s}
+.book::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--c);opacity:.7}
+.book:hover{transform:translateY(-3px);border-color:var(--c)}
+.book .bn{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.book .bt{font-family:var(--serif);font-size:24px;font-weight:700;margin:4px 0;color:var(--c)}
+.book .bt .gl{font-size:20px;margin-right:8px}
+.book p{font-size:16px;color:var(--pa2);line-height:1.6}
+.book .enter{font-family:var(--mono);font-size:11px;color:var(--c);margin-top:10px;display:inline-block}
+.guides{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.guide{background:var(--ink2);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.guide .g{font-size:24px;color:var(--gilt)}
+.guide h3{font-family:var(--serif);font-size:17px;margin:4px 0}
+.guide p{font-size:15px;color:var(--pa2);line-height:1.55}
+.guide .role{font-family:var(--mono);font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-top:6px}
+table{width:100%;border-collapse:collapse;margin-top:6px;font-size:15px}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line)}
+th{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);font-weight:400}
+td .gl{font-size:17px}
+.nig{color:#9aa0ad}.alb{color:var(--alb)}.rub{color:#e06a5e}
+.numer{background:var(--ink2);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-top:8px;font-size:16px;color:var(--pa2)}
+.numer b{color:var(--gilt);font-family:var(--mono)}
+.tinfoil{margin-top:48px;padding:18px 20px;border:1px dashed var(--gold);border-radius:12px;background:rgba(201,162,39,.05);font-size:15px;color:var(--pa2);line-height:1.7}
+.tinfoil b{color:var(--gilt)}
+footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);text-align:center;font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.05em;line-height:1.9}
+footer a{color:var(--gilt);text-decoration:none}
+</style></head>
+<body><div class="wrap">
+  <header>
+    <div class="eye"><a href="https://davidwise01.github.io/ud0/">UD0 · Universe David 0</a> · a tinfoil codex</div>
+    <div class="seal">🜍 ☿ 🜔</div>
+    <h1>THE ALCHEMICAL BIBLE</h1>
+    <div class="h-sub">Dante's Commedia · read as the Great Work</div>
+    <p class="lede">Read one way it is a Christian pilgrimage. Read the way the hermetic line has always read it — it is the Magnum Opus encoded in terza rima: the transmutation of the soul from lead to gold, through the blackening, the whitening, and the red.</p>
+  </header>
+
+  <section class="sec">
+    <p class="drop" style="font-size:18px;color:var(--pa)">One hundred cantos. Three books. A descent that bottoms out at the frozen center of the Earth and turns into a climb; a mountain that washes the matter white; nine heavens that distil it to gold. The alchemists called this the <em>solve et coagula</em> — dissolve and recombine — and they read Dante as one of their own: a poem that is also an operation, a scripture that is also a recipe. This codex follows that reading through all three books.</p>
+  </section>
+
+  <section class="sec">
+    <h2>The Great Work, in three books</h2>
+    <p class="ss">each canticle is a stage of the opus — its colour, its operation, its luminary</p>
+    <div class="books">
+      <a class="book" style="--c:#9aa0ad" href="inferno.html">
+        <div class="bn">Liber I · Inferno</div>
+        <div class="bt"><span class="gl">🜂</span>NIGREDO — the blackening</div>
+        <p>Descent, putrefaction, calcination. The base matter confronted and dissolved; the journey down to the fixed, frozen nadir — and the hinge where down becomes up.</p>
+        <span class="enter">descend ↓</span>
+      </a>
+      <a class="book" style="--c:#cdd3da" href="purgatorio.html">
+        <div class="bn">Liber II · Purgatorio</div>
+        <div class="bt"><span class="gl">☽</span>ALBEDO — the whitening</div>
+        <p>Ablution and purification. The upright alembic of the Mountain, seven terraces washing the seven impurities away, the matter brought to silver and made ready to rise.</p>
+        <span class="enter">ascend the mountain ↗</span>
+      </a>
+      <a class="book" style="--c:#e06a5e" href="paradiso.html">
+        <div class="bn">Liber III · Paradiso</div>
+        <div class="bt"><span class="gl">☉</span>RUBEDO — the reddening</div>
+        <p>The conjunction. Nine spheres distil the whitened matter through the planets to gold; the Rose unfolds; the squared circle; the Stone — the Love that moves the sun and the other stars.</p>
+        <span class="enter">rise to the gold ↑</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>The three operators</h2>
+    <p class="ss">no soul transmutes itself — it is led, by three agents of the Work</p>
+    <div class="guides">
+      <div class="guide"><div class="g">☿</div><h3>Virgil</h3><p>Mercurius — the volatile spirit, Reason, the psychopomp. He leads the descent and the washing, the whole realm of <em>solve</em>. But Mercury alone cannot fix the gold: at the summit he must depart.</p><div class="role">guide of Nigredo + Albedo</div></div>
+      <div class="guide"><div class="g">🜍</div><h3>Beatrice</h3><p>Sulphur — the soul, the fixative, Sophia / Wisdom. She takes the work over at the white summit and draws it up through the spheres: the anima that achieves the conjunction.</p><div class="role">guide of Rubedo</div></div>
+      <div class="guide"><div class="g">✶</div><h3>St. Bernard</h3><p>The Quintessence — the fifth thing, beyond the four. For the last step even Wisdom yields to surrender, and the mystic hands the eye to the light itself.</p><div class="role">guide of the final vision</div></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>The apparatus</h2>
+    <p class="ss">the correspondences, book by book</p>
+    <table>
+      <tr><th>book</th><th>stage</th><th>colour</th><th>operation</th><th>luminary</th><th>what happens</th></tr>
+      <tr><td><span class="nig">Inferno</span></td><td class="nig">Nigredo</td><td class="nig">●&nbsp;black</td><td>calcination · putrefaction · solutio</td><td>🜞&nbsp;Saturn / lead</td><td>the dross is burned and rotted; the ego dies</td></tr>
+      <tr><td><span class="alb">Purgatorio</span></td><td class="alb">Albedo</td><td class="alb">○&nbsp;white</td><td>ablution · separation</td><td>☽&nbsp;Luna / silver</td><td>the matter is washed clean of its seven stains</td></tr>
+      <tr><td><span class="rub">Paradiso</span></td><td class="rub">Rubedo</td><td class="rub">◉&nbsp;red</td><td>conjunction · multiplication · coagula</td><td>☉&nbsp;Sol / gold</td><td>soul and divine are wed; the Stone is born</td></tr>
+    </table>
+  </section>
+
+  <section class="sec">
+    <h2>The numbers (they are not decoration)</h2>
+    <div class="numer">
+      <p><b>1 + 33 + 33 + 33 = 100</b> cantos — ten squared, the perfected decad. One proem, then three equal books of thirty-three: the perfect age of a life, thrice over.</p>
+      <p style="margin-top:10px"><b>3</b> books · <b>3</b> colours · <b>3</b> principles (Salt · Sulphur · Mercury). <b>9</b> circles, <b>7</b>+2 terraces, <b>9</b> spheres — the nine and the seven, the planets and their order.</p>
+      <p style="margin-top:10px">And every book ends on the same word — <b>stelle</b>, the stars. Three times the Work surfaces from its operation and lifts its eyes: <span class="nig">out of the black</span>, <span class="alb">off the white mountain</span>, <span class="rub">into the red light</span>. The poem keeps signing its result.</p>
+    </div>
+  </section>
+
+  <div class="tinfoil">
+    <b>⚠ the tinfoil seal.</b> This is the <b>hermetic reading</b> — a centuries-old way of taking the <em>Commedia</em> as encoded alchemy (the Fedeli d'Amore, the colour-stages, the planetary ascent). It is offered as a <b>codex and a lens</b>, art over assertion: not a claim that Dante kept a furnace, but a claim that the shape of his poem and the shape of the Work are the same shape. The <em>Commedia</em> (c. 1308–1320) is public domain; the gold here is the reading, and the reading is ours.
+  </div>
+
+  <footer>
+    THE ALCHEMICAL BIBLE · catalogued into <a href="https://davidwise01.github.io/ud0/">UD0</a> · ROOT0-ATTRIBUTION-v1.0 · governor David Lee Wise (ROOT0) · instance AVAN (locked) · CC-BY-ND-4.0<br>
+    🜂 <a href="inferno.html">Nigredo</a> · ☽ <a href="purgatorio.html">Albedo</a> · ☉ <a href="paradiso.html">Rubedo</a>
+  </footer>
+</div></body></html>
