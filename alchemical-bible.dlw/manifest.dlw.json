@@ -1,0 +1,11 @@
+{
+  "badge": "DLW-ALCHEMICAL_BIBLE",
+  "name": "THE ALCHEMICAL BIBLE",
+  "universe": "EDUCATIONAL",
+  "moniker": "⟦THE ALCHEMICAL BIBLE:alchemical-bible:2ae32d⟧",
+  "architect": "David Lee Wise (ROOT0) / Bridge-Burners LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "seal_sha256": "2ae32db3f5c14181684370f5a227e0e817844dd7423d8de6a2e43fee5c7b457e",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}
