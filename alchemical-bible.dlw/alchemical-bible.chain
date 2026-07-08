@@ -1,0 +1,9 @@
+ROOT0-DLW-CHAIN-v1
+index : 586
+slug  : alchemical-bible
+seal  : 2ae32db3f5c14181684370f5a227e0e817844dd7423d8de6a2e43fee5c7b457e
+prev  : 51a7c39be989a98036ea00fcb59cdabc3ac253e35edfd1946fb21a3da0cdb4f7
+link  : 86978d634176d714be49d231d4ebf64fa3119156e11b618d4c70dfbb62359863
+head  : 3447d3a0533aaf1e29a8bdc67a9774884fb3ae9dbc8a17064b7a008ca3c4ec90
+
+— the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.
